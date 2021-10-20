@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
  
-app.listen(3500)
+app.listen(process.env.PORT || 5000)
 
 const {google} = require('googleapis');
 const sheets = google.sheets('v4');
