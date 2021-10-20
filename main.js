@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
- 
+require('dotenv').config()
 app.listen(3500)
 
 const { google } = require("googleapis");
@@ -10,9 +10,6 @@ const sheetValues = {
   values:[],
   categories:[]
 };
-
-
-
 
 
 async function main() {
